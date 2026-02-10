@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achille Zouaoui - Java Backend Developer</title>
+    <meta name="description"
+        content="Java Backend Developer specializing in Spring Boot, PostgreSQL, and REST APIs. 8 years of experience building scalable systems.">
+
+    <link rel="icon" type="image/png" href="img/compass.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="transition.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Privacy-friendly analytics by Plausible -->
+    <script async src="https://plausible.io/js/pa-p-LoFQZPda6ILss5ukU3w.js"></script>
+    <script>
+        window.plausible = window.plausible || function () { (plausible.q = plausible.q || []).push(arguments) }, plausible.init = plausible.init || function (i) { plausible.o = i || {} };
+        plausible.init()
+    </script>
+
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="#contact">
+                        <img src="img/My_home.PNG" alt="Achille Zouaoui">
+                    </a>
+                </div>
+
+                <div class="burger-menu">
+                    <div class="burger-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+                <nav class="nav-menu">
+                    <ul class="nav-links">
+                        <li><a href="#Home">Home</a></li>
+                        <li><a href="#works">Works</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="Portfolio.html">Portfolio</a></li>
+
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="social-menu">
+            <div class="social-title">Social Media</div>
+            <div class="social-content">
+                <a href="https://www.linkedin.com/in/achille-zouaoui/" class="social-link" target="_blank"
+                    rel="noopener noreferrer">
+                    <div class="social-card">
+                        <div class="icon-wrapper">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                        <span class="platform-name">LinkedIn</span>
+                    </div>
+                </a>
+
+                <a href="Portfolio.html" class="social-link" target="_blank" rel="noopener noreferrer">
+                    <div class="social-card">
+                        <div class="icon-wrapper">
+                            <i class="fa-solid fa-briefcase"></i>
+
+                        </div>
+                        <span class="platform-name">Portfolio</span>
+                    </div>
+                </a>
+
+                <a href="#" onclick="downloadCV(); return false;" class="social-link">
+                    <div class="social-card">
+                        <div class="icon-wrapper">
+                            <i class="fa-solid fa-file-pdf" style="color: #808080;"></i>
+                        </div>
+                        <span class="platform-name">My CV</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <section id="Home" class="home">
+            <canvas></canvas>
+            <div class="home-content">
+                <!-- Container About -->
+                <div class="about-container">
+                    <!-- Image à côté -->
+                    <div class="info-box illustration-box">
+                        <div class="illustration-container">
+                            <img src="img/Component 1.svg" alt="Contact illustration">
+                        </div>
+                    </div>
+
+                    <!-- Infos texte -->
+                    <div class="info-box text-box">
+                        <h2 class="section-title">Hello I'm Achille</h2>
+                        <p class="headline">Senior Product Designer</p>
+
+                        <blockquote class="quote" style="font-size: 1.3rem;">
+                            "I help product and tech teams simplify and scale complex financial and internal tools."
+                        </blockquote>
+
+
+                        <div class="text-content">
+                            <ul>
+                                <li>User Research</li>
+                                <li>Design Thinking</li>
+                                <li>Product Design</li>
+                                <li>Coaching and Training</li>
+                                <li>Accessibility</li>
+                                <li>Agility</li>
+                            </ul>
+                        </div>
+
+                        <div class="download-cv">
+                            <button class="btn-download" onclick="downloadCV()">
+                                Download my CV <span class="download-icon">↓</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="works" class="works">
+            <div class="screen-container">
+                <div class="works-container">
+                    <div style="height:1.5rem;"></div>
+                    <h2 class="section-title">They Trusted Me</h2>
+
+
+                    <div class="partners-showcase">
+                        <div class="partner-logo-item">
+                            <img src="img/labels/Banque-Populaire.png" alt="Banque Populaire">
+                        </div>
+                        <div class="partner-logo-item">
+                            <img src="img/labels/oney.png" alt="Oney">
+                        </div>
+                        <div class="partner-logo-item">
+                            <img src="img/labels/Decathlon.png" alt="Decathlon">
+                        </div>
+                        <div class="partner-logo-item">
+                            <img src="img/labels/Auchan.png" alt="Auchan">
+                        </div>
+                        <div class="partner-logo-item">
+                            <img src="img/labels/april.png" alt="April">
+                        </div>
+                        <div class="partner-logo-item">
+                            <img src="img/labels/Synlab.png" alt="Synlab">
+                        </div>
+                        <div class="partner-logo-item">
+                            <img src="img/labels/woop.png" alt="Woop">
+                        </div>
+                        <div class="partner-logo-item">
+                            <img src="img/labels/lesaffre.png" alt="Lesaffre">
+                        </div>
+
+                    </div>
+                    <div class="partners-showcase2">
+                        <div class="partner-image">
+                            <img src="img/ab1.png">
+                        </div>
+                        <div class="partner-image">
+                            <img src="img/ab2.png">
+                        </div>
+                        <div class="partner-image">
+                            <img src="img/ab3.png">
+                        </div>
+
+                        <blockquote class="quote">"I design complex banking, fintech, and retail products that deliver
+                            real business impact."
+                            <br> <br> Turning complexity into clarity, scale, and impactful user experiences.
+                        </blockquote>
+                    </div>
+
+                    <div class="trust-stats">
+                        <div class="stat-box">
+                            <span class="stat-number" data-target="8">0</span>
+                            <span class="stat-label">Partners</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-number" data-target="9">0</span>
+                            <span class="stat-label">Years of Experience</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-number" data-target="19">0</span>
+                            <span class="stat-label">Projects Delivered</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-number" data-target="50">0</span>
+                            <span class="stat-label">Collaborators</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="about" class="about">
+            <div class="screen-container">
+                <div class="monitor-content">
+                    <div class="about-container">
+                        <!-- PARTIE GAUCHE - SKILLS -->
+                        <div class="skills-box">
+
+                            <h2 class="section-title">Skills</h2>
+
+
+
+
+                            <div class="partners-showcase">
+                                <div class="partner-logo-item" title="Figma">
+                                    <img src="https://cdn.prod.website-files.com/648900146726206e6a761587/64a41fb09e883e09bd0f70e6_figma.svg"
+                                        alt="Figma">
+                                </div>
+                                <div class="partner-logo-item" title="Photoshop">
+                                    <img src="https://cdn.prod.website-files.com/648900146726206e6a761587/64a421eeb6e5e826ff08e6e1_Adobe_Photoshop_CC_icon.svg.png"
+                                        alt="Photoshop">
+                                </div>
+                                <div class="partner-logo-item" title="Illustrator">
+                                    <img src="https://cdn.prod.website-files.com/648900146726206e6a761587/64a421efac69920c34d82e39_Adobe_Illustrator_CC_icon.svg.png"
+                                        alt="Illustrator">
+                                </div>
+                                <div class="partner-logo-item" title="After Effects">
+                                    <img src="https://cdn.prod.website-files.com/648900146726206e6a761587/64a421eeeec18534ae62b429_Adobe_After_Effects_CC_icon.svg.png"
+                                        alt="After Effects">
+                                </div>
+                                <div class="partner-logo-item" title="Hotjar">
+                                    <img src="https://cdn.prod.website-files.com/648900146726206e6a761587/64a41fb051e02928a63e50ad_hotjar-p-1080.png"
+                                        alt="Hotjar">
+                                </div>
+                                <div class="partner-logo-item" title="Miro">
+                                    <img src="https://cdn.prod.website-files.com/648900146726206e6a761587/64a41fb0697ab4e14bcb4c39_miro.svg"
+                                        alt="Miro">
+                                </div>
+                                <div class="partner-logo-item" title="AB Tasty">
+                                    <img src="https://cdn.prod.website-files.com/648900146726206e6a761587/64a41fb114ae0c3c3d33af02_abtasty.png"
+                                        alt="AB Tasty">
+                                </div>
+                                <div class="partner-logo-item" title="Notion">
+                                    <img src="https://cdn.prod.website-files.com/648900146726206e6a761587/64a41fb1c91893dcbb8c3f3c_notion.svg"
+                                        alt="Notion">
+                                </div>
+                                <div class="partner-logo-item" title="Pitch">
+                                    <img src="https://cdn.prod.website-files.com/648900146726206e6a761587/64a41fb1e2b9042dcb83f7bf_Pitch%20Logo-gradient-p-1080.png"
+                                        alt="Pitch">
+                                </div>
+                                <div class="partner-logo-item" title="Maze">
+                                    <img src="https://cdn.prod.website-files.com/648900146726206e6a761587/64a41fb0bd478cf7538d9a51_maze.png"
+                                        alt="Maze">
+                                </div>
+                                <div class="partner-logo-item" title="Zeroheight">
+                                    <img src="https://cdn.prod.website-files.com/648900146726206e6a761587/64a41fb0e20bb4386d0ab997_zeroheight-icon-logo-9A862F85AD-seeklogo.com.png"
+                                        alt="Zeroheight">
+                                </div>
+                                <div class="partner-logo-item" title="Make">
+                                    <img src="https://cdn.prod.website-files.com/648900146726206e6a761587/64a41fb020604eddfa1fba14_make.png"
+                                        alt="Make">
+                                </div>
+                                <div class="partner-logo-item" title="Contentsquare">
+                                    <img src="https://cdn.prod.website-files.com/648900146726206e6a761587/64a4228427867cd3473ca9fd_1_yvHM4rWUFl0DsXhphc3JPw.png"
+                                        alt="Contentsquare">
+                                </div>
+                                <div class="partner-logo-item" title="Webflow">
+                                    <img src="https://cdn.prod.website-files.com/648900146726206e6a761587/64a7d297a8469f04b1b20dd0_webflow.png"
+                                        alt="Webflow">
+                                </div>
+                                <div class="partner-logo-item" title="Google Analytics">
+                                    <img src="https://cdn.prod.website-files.com/648900146726206e6a761587/64a41fb0b38c92a681b977ca_GA.svg"
+                                        alt="Google Analytics">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PARTIE DROITE - INFO TEXT -->
+                        <div class="info-box">
+                            <div style="height:20rem;"></div>
+
+                            <h2 class="section-title">About Me</h2>
+
+                            <p class="headline">
+                                Senior Product Designer focused on design systems & complex product
+                            </p>
+
+                            <blockquote class="quote">
+                                "Driven by a passion for creating clear and accessible solutions,
+                                I challenge my clients’ product vision to deliver the best user experiences."
+                            </blockquote>
+
+                            <div class="text-content">
+                                <p>With experience in both product design and development, I bridge collaboration
+                                    between product management, UX, and tech teams.
+
+                                    I actively contribute to idea generation through a Design Thinking approach,
+                                    from scoping and user research to prototyping,
+                                    wireframing, and testing, while optimizing everyone’s workflows.</p>
+
+                                <p>Working on high-stakes products with multi-actor journeys, I develop the right
+                                    features for the right people, ensuring coherence, accessibility, and scalability.
+                                </p>
+
+                            </div>
+
+                            <div class="about-container">
+                                <div class="download-cv">
+                                    <button class="btn-download-secondary" onclick="downloadCV()">
+                                        Download my CV <span class="download-icon">↓</span>
+                                    </button>
+                                </div>
+
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="contact-container">
+                <div class="contact-content">
+                    <h2 class="title">Get in <span>Touch</span></h2>
+                    <p class="contact-description">
+                        You can reach me by phone or email, explore my portfolio and LinkedIn,
+                        stay tuned for upcoming projects. I look forward to connecting and discussing how we can create
+                        meaningful experiences together,
+                        scalable products (coffee optional ☕).
+                        Let’s create something meaningful… and maybe have a little fun along the way!</p>
+
+                    <!-- Nouveau bouton après le paragraphe -->
+                    <div class="download-cv">
+                        <button class="btn-download" onclick="window.location.href='Portfolio.html'">
+                            Go to Portfolio <span class="download-icon">→</span>
+                        </button>
+                    </div>
+
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <i class="fa-solid fa-phone phone-icon"></i>
+                            <div class="info-text">
+                                <span>PHONE</span>
+                                <p>(+33) 06 69 56 74 18</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="fa-solid fa-envelope email-icon"></i>
+                            <div class="info-text">
+                                <span>EMAIL</span>
+                                <p><a href="mailto:achille.zouaoui@gmail.com">achille.zouaoui@gmail.com</a></p>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/achille-zouaoui" target="_blank"
+                                rel="noopener noreferrer" class="social-item">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="#" onclick="downloadCV(); return false;" class="social-item">
+                                <i class="fa-solid fa-file-arrow-down"></i>
+                                <span>Download my CV</span>
+                            </a>
+                            <a href="#" onclick="downloadPortfolio(); return false;" class="social-item">
+                                <i class="fa-solid fa-file-arrow-down"></i>
+                                <span>Download my Portfolio</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="illustration-container">
+                    <img src="img/My_home.PNG" alt="Contact illustration">
+                </div>
+            </div>
+        </section>
+
+        <script src="script.js"></script>
+
+
+</body>
+
+</html>
+
+<script src="script.js"></script>
+</body><!-- rebuild -->
+<!-- rebuild -->
