@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Achille Zouaoui</title>
+  <meta name="description" content="Portfolio of Achille Zouaoui — Senior Product Designer. Projects for WOOP, Oney Bank, BRED Banque Populaire and APRIL Assurance.">
+
+  <link rel="icon" type="image/png" href="img/compass.png">
+  <link rel="stylesheet" href="portfolio-style.css">
+  <link rel="stylesheet" href="transition.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Bottom navigation bar -->
+  <nav id="bottom-nav">
+
+    <a href="index.html" class="bn-back">
+      <i class="fa-solid fa-arrow-left"></i>
+      <span>Back to site</span>
+    </a>
+
+    <div class="bn-center">
+      <button id="btn-prev" class="bn-arrow" disabled aria-label="Previous section">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+      <div class="bn-label">
+        <span id="section-counter">01</span>
+        <span class="bn-sep">/</span>
+        <span id="section-name">Home Portfolio</span>
+      </div>
+      <button id="btn-next" class="bn-arrow" aria-label="Next section">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+    </div>
+
+    <div id="section-indicator">
+      <div class="indicator-dot active" data-index="0" title="Home Portfolio"></div>
+      <div class="indicator-dot" data-index="1" title="WOOP"></div>
+      <div class="indicator-dot" data-index="2" title="Oney Bank"></div>
+      <div class="indicator-dot" data-index="3" title="BRED Bank"></div>
+      <div class="indicator-dot" data-index="4" title="APRIL Assurance"></div>
+    </div>
+
+  </nav>
+
+  <div id="page-wrapper">
+    <!--  Navs  -->
+    <div class="navs">
+      <div class="nav nav-0" onclick="scrollToSection(0)">
+        <div class="title">
+          <span>Home Portfolio</span>
+        </div>
+        <div class="number">01</div>
+      </div>
+      <div class="nav nav-1" onclick="scrollToSection(1)">
+        <div class="title">
+          <span>WOOP</span>
+        </div>
+        <div class="number">02</div>
+      </div>
+      <div class="nav nav-2" onclick="scrollToSection(2)">
+        <div class="title">
+          <span>Oney Bank</span>
+        </div>
+        <div class="number">03</div>
+      </div>
+      <div class="nav nav-3" onclick="scrollToSection(3)">
+        <div class="title">
+          <span>BRED Bank</span>
+        </div>
+        <div class="number">04</div>
+      </div>
+      <div class="nav nav-4" onclick="scrollToSection(4)">
+        <div class="title">
+          <span>APRIL Assurance</span>
+        </div>
+        <div class="number">05</div>
+      </div>
+    </div>
+
+    <!--  Sections  -->
+    <div class="section section-0">
+      <div class="content">
+        <div class="project">
+          <div class="home-grid">
+
+            <!-- LEFT: Identity -->
+            <div class="home-identity">
+
+              <div class="home-status">Senior Product Designer</div>
+
+              <h2>Achille Zouaoui</h2>
+
+              <p class="role">Design Systems · Accessibilité · Produits complexes</p>
+
+              <p class="home-bio">
+                Expert dans la structuration et la gouvernance de Design Systems — de la conception des composants à leur adoption équipe. Expérience sur des produits multi-acteurs à forts enjeux business. J'utilise l'IA générative et agentique pour accélérer la conception, la documentation et la collaboration design ↔ dev.
+              </p>
+
+              <div class="home-contact">
+                <div class="home-contact-inline">
+                  <div class="home-contact-row">
+                    <a href="mailto:achille.zouaoui@gmail.com" class="home-contact-item">
+                      <i class="fas fa-envelope"></i> achille.zouaoui@gmail.com
+                    </a>
+                    <button class="copy-btn" data-label="Email copié !" onclick="copyToClipboard('achille.zouaoui@gmail.com', this, event)" title="Copier l'email">
+                      <i class="fas fa-copy"></i>
+                    </button>
+                  </div>
+                  <div class="home-contact-row">
+                    <a href="tel:+33669567418" class="home-contact-item">
+                      <i class="fas fa-phone"></i> +33 06 69 56 74 18
+                    </a>
+                    <button class="copy-btn" data-label="Numéro copié !" onclick="copyToClipboard('+33669567418', this, event)" title="Copier le numéro">
+                      <i class="fas fa-copy"></i>
+                    </button>
+                  </div>
+                </div>
+                <a href="https://www.achillezouaoui.dev" target="_blank" class="home-contact-item">
+                  <i class="fas fa-globe"></i> achillezouaoui.dev
+                </a>
+                <a href="https://www.linkedin.com/in/achille-z" target="_blank" class="home-contact-item">
+                  <i class="fab fa-linkedin"></i> linkedin.com/in/achille-z
+                </a>
+              </div>
+
+              <div class="download-actions">
+                <a href="Achille_Zouaoui_Portfolio.pdf" download class="btn-download-portfolio">
+                  <i class="fas fa-briefcase"></i> Download Portfolio
+                </a>
+                <a href="Achille_Zouaoui_Senior_Product_Designer.pdf" download class="btn-download-portfolio btn-download-cv">
+                  <i class="fas fa-file-pdf"></i> CV
+                </a>
+              </div>
+
+            </div>
+
+            <!-- RIGHT: Skills -->
+            <div class="home-skills">
+
+              <div class="skill-group">
+                <div class="skill-group-title">
+                  <i class="fas fa-robot"></i> AI-Augmented Design
+                </div>
+                <div class="skill-tags">
+                  <span class="tag">Figma AI</span>
+                  <span class="tag">Figma Make</span>
+                  <span class="tag">Figma MCP × Claude Code</span>
+                  <span class="tag">Excalidraw MCP</span>
+                  <span class="tag">Claude</span>
+                  <span class="tag">GPT</span>
+                </div>
+              </div>
+
+              <div class="skill-sep"></div>
+
+              <div class="skill-group">
+                <div class="skill-group-title">
+                  <i class="fas fa-layer-group"></i> Design Systems
+                </div>
+                <div class="skill-tags">
+                  <span class="tag">Atomic Design</span>
+                  <span class="tag">Design Tokens</span>
+                  <span class="tag">Gouvernance</span>
+                  <span class="tag">Zeroheight</span>
+                  <span class="tag">Slots &amp; Auto-layouts</span>
+                  <span class="tag">Design ↔ Code sync</span>
+                </div>
+              </div>
+
+              <div class="skill-sep"></div>
+
+              <div class="skill-group">
+                <div class="skill-group-title">
+                  <i class="fas fa-universal-access"></i> Accessibilité
+                </div>
+                <div class="skill-tags">
+                  <span class="tag">WCAG AA/AAA</span>
+                  <span class="tag">Stark</span>
+                  <span class="tag">Lighthouse</span>
+                  <span class="tag">Accessibilité visuelle &amp; motrice</span>
+                </div>
+              </div>
+
+              <div class="skill-sep"></div>
+
+              <div class="skill-group">
+                <div class="skill-group-title">
+                  <i class="fas fa-users"></i> Leadership &amp; Culture Design
+                </div>
+                <div class="skill-tags">
+                  <span class="tag">Mentorat designers</span>
+                  <span class="tag">Ateliers UX</span>
+                  <span class="tag">Collaboration produit/dev</span>
+                  <span class="tag">Communication décisionnelle</span>
+                </div>
+              </div>
+
+              <div class="skill-sep"></div>
+
+              <div class="skill-group">
+                <div class="skill-group-title">
+                  <i class="fas fa-chart-line"></i> UX Produits complexes
+                </div>
+                <div class="skill-tags">
+                  <span class="tag">Parcours multi-acteurs</span>
+                  <span class="tag">Dashboards métiers</span>
+                  <span class="tag">UX Research</span>
+                  <span class="tag">Heatmaps</span>
+                  <span class="tag">Insights data-driven</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section WOOP -->
+    <div class="section section-1">
+      <div class="content">
+        <div class="project project-woop">
+          <div class="project-header">
+            <h3>WOOP</h3>
+            <p class="project-subtitle">Lead Design System — Governance, AI Workflows & Scalable Components</p>
+          </div>
+
+          <div class="project-details">
+            <div class="project-text">
+
+              <div class="detail-block">
+                <h4>Context</h4>
+                <p>WOOP is a delivery orchestration SaaS platform used by major retailers including Auchan, Decathlon, and Leroy Merlin. With a growing product and engineering team, the platform lacked a structured design foundation — leading to inconsistent UI, duplicated components, and slow delivery cycles. A scalable, governed Design System was urgently needed.</p>
+              </div>
+
+              <div class="detail-block">
+                <h4>My Role</h4>
+                <p>Lead Product Designer — sole owner of the Design System initiative. I drove strategy, architecture, documentation, and adoption across all product teams from inception to production.</p>
+              </div>
+
+              <div class="detail-block">
+                <h4>Approach & Methods</h4>
+                <ul>
+                  <li>Architected a full Design System using Atomic Design principles — atoms, molecules, organisms, templates</li>
+                  <li>Defined and managed Design Tokens (color, typography, spacing, elevation) for consistent multi-platform theming</li>
+                  <li>Published comprehensive documentation on Zeroheight with governance rules and contribution guidelines</li>
+                  <li>Integrated AI tools (Figma AI, Figma Make, Figma First Draft, Claude, GPT) to accelerate design production and UX analysis</li>
+                  <li>Connected DataDog analytics for UX monitoring — built automated reporting dashboards for product insights</li>
+                  <li>Led co-design workshops and alignment sessions with product owners and engineers</li>
+                  <li>Defined WCAG AA/AAA accessibility standards across all components</li>
+                </ul>
+              </div>
+
+              <div class="detail-block">
+                <h4>Key Contributions</h4>
+                <ul>
+                  <li>Built 50+ reusable, accessible components with documented variants and usage rules</li>
+                  <li>Established design governance process — review cycles, contribution workflow, versioning</li>
+                  <li>Ran design system onboarding workshops for product and dev teams</li>
+                  <li>Shifted the design culture from ad-hoc UX to structured, scalable practices</li>
+                </ul>
+              </div>
+
+              <div class="detail-block kpi-block">
+                <h4>Impact & Results</h4>
+                <div class="kpi-grid">
+                  <div class="kpi-item">
+                    <span class="kpi-value">80%</span>
+                    <span class="kpi-label">User journeys aligned with the design system</span>
+                  </div>
+                  <div class="kpi-item">
+                    <span class="kpi-value">40%</span>
+                    <span class="kpi-label">Reduction in duplicate UI components</span>
+                  </div>
+                  <div class="kpi-item">
+                    <span class="kpi-value">25%</span>
+                    <span class="kpi-label">Faster front-end development</span>
+                  </div>
+                  <div class="kpi-item">
+                    <span class="kpi-value">25%</span>
+                    <span class="kpi-label">Faster design production with AI-assisted workflows</span>
+                  </div>
+                  <div class="kpi-item">
+                    <span class="kpi-value">10%</span>
+                    <span class="kpi-label">Faster back-end dev via clarified UX rules</span>
+                  </div>
+                  <div class="kpi-item">
+                    <span class="kpi-value">&lt;18 mo</span>
+                    <span class="kpi-label">80% design system adoption across product teams</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="detail-block">
+                <h4>Tools</h4>
+                <div class="tools-row">
+                  <span class="tool-tag">Figma</span>
+                  <span class="tool-tag">Figma AI</span>
+                  <span class="tool-tag">Figma Make</span>
+                  <span class="tool-tag">Zeroheight</span>
+                  <span class="tool-tag">Design Tokens</span>
+                  <span class="tool-tag">Atomic Design</span>
+                  <span class="tool-tag">DataDog</span>
+                  <span class="tool-tag">Claude</span>
+                  <span class="tool-tag">GPT</span>
+                  <span class="tool-tag">Stark</span>
+                  <span class="tool-tag">Jira</span>
+                </div>
+              </div>
+
+              <p class="project-note">Mockups and additional details available on request.</p>
+            </div>
+
+            <div class="project-image-large">
+              <img src="img/woop-design-system.png" alt="WOOP Design System - Components and Guidelines" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section Oney Bank -->
+    <div class="section section-2">
+      <div class="content">
+        <div class="project project-oney">
+          <div class="project-header">
+            <h3>Oney Bank</h3>
+            <p class="project-subtitle">Multi-Actor Loan Management Platform — Customers, Merchants & Bank Agents</p>
+          </div>
+
+          <div class="project-details">
+            <div class="project-text">
+
+              <div class="detail-block">
+                <h4>Context</h4>
+                <p>Oney Bank needed to digitise and streamline its end-to-end after-sales loan management journey. The solution had to serve three distinct actor types — customers, merchants, and internal bank agents — each with specific workflows, permissions, and information needs, all within Oney's established design system.</p>
+              </div>
+
+              <div class="detail-block">
+                <h4>My Role</h4>
+                <p>Product Designer — embedded within a cross-functional team of 10. I owned the UX across all three actor interfaces, facilitating daily design reviews in English with Oney and FintechOS teams.</p>
+              </div>
+
+              <div class="detail-block">
+                <h4>Approach & Methods</h4>
+                <ul>
+                  <li>Mapped transactional workflows and edge cases for each actor type</li>
+                  <li>Conducted user needs analysis and provided strategic UX recommendations under business and technical constraints</li>
+                  <li>Designed scalable dashboards tailored to each role (customer self-service, merchant management, agent back-office)</li>
+                  <li>Integrated existing Oney Design System components throughout all interfaces</li>
+                  <li>Coordinated with external technology partner FintechOS for seamless implementation</li>
+                  <li>Ran daily design reviews in English across Oney and FintechOS stakeholders</li>
+                </ul>
+              </div>
+
+              <div class="detail-block">
+                <h4>Key Contributions</h4>
+                <ul>
+                  <li>Designed a customer-facing portal for loan information, personal data management, and after-sales requests</li>
+                  <li>Built a merchant portal for transaction and contract management</li>
+                  <li>Created agent back-office screens for loan monitoring and processing</li>
+                  <li>Produced transactional email templates aligned with Oney brand guidelines</li>
+                  <li>Ensured full WCAG AA accessibility compliance across all interfaces</li>
+                </ul>
+              </div>
+
+              <div class="detail-block">
+                <h4>Impact</h4>
+                <ul>
+                  <li>Delivered a fully digitised, role-specific after-sales journey — eliminating manual processes</li>
+                  <li>Improved experience consistency across all three user actors within a single platform</li>
+                  <li>Strengthened Oney Design System adoption through practical, production-ready application</li>
+                </ul>
+              </div>
+
+              <div class="detail-block">
+                <h4>Tools</h4>
+                <div class="tools-row">
+                  <span class="tool-tag">Figma</span>
+                  <span class="tool-tag">FigJam</span>
+                  <span class="tool-tag">Oney Design System</span>
+                  <span class="tool-tag">Jira</span>
+                  <span class="tool-tag">Zeplin</span>
+                  <span class="tool-tag">Stark</span>
+                </div>
+              </div>
+
+              <p class="project-note">Mockups and additional details available on request.</p>
+            </div>
+
+            <div class="project-image-large">
+              <img src="img/oney-portal.png" alt="Oney Bank – Loan management portal" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section BRED Banque Populaire -->
+    <div class="section section-3">
+      <div class="content">
+        <div class="project project-bred">
+          <div class="project-header">
+            <h3>BRED Bank</h3>
+            <p class="project-subtitle">Internal Banking Tool Redesign — Complex Business Rules & UX Standardisation</p>
+          </div>
+
+          <div class="project-details">
+            <div class="project-text">
+
+              <div class="detail-block">
+                <h4>Context</h4>
+                <p>BRED Banque Populaire required a complete redesign of an internal transfer management tool used by banking advisors daily. The existing system was cluttered, inconsistent, and poorly adapted to complex business rules — slowing down operations and generating user frustration.</p>
+              </div>
+
+              <div class="detail-block">
+                <h4>My Role</h4>
+                <p>Product Designer UX/UI — collaborating closely with UX Researcher, UI Designer, Product Owner, Product Manager, and Head of Product to deliver an end-to-end redesign from discovery to handoff.</p>
+              </div>
+
+              <div class="detail-block">
+                <h4>Approach & Methods</h4>
+                <ul>
+                  <li>Facilitated discovery workshops to capture user needs and complex business rules</li>
+                  <li>Led co-design sessions from the earliest design phases, involving stakeholders and end users</li>
+                  <li>Translated dense business logic into clear, navigable UX flows and dashboards</li>
+                  <li>Delivered iterative wireframes and interactive prototypes validated through user feedback loops</li>
+                  <li>Built a reusable UI kit to standardise visual components and ensure design consistency</li>
+                  <li>Applied Design System principles throughout — contributing to BRED's evolving component library</li>
+                </ul>
+              </div>
+
+              <div class="detail-block">
+                <h4>Key Contributions</h4>
+                <ul>
+                  <li>Redesigned core transfer management screens — improved information hierarchy and task efficiency</li>
+                  <li>Created dashboards adapted to advisor workflows with clearer data visualisation</li>
+                  <li>Delivered a structured UI kit ensuring visual consistency and reducing design debt</li>
+                  <li>Facilitated alignment between business, product, and engineering through shared design artefacts</li>
+                </ul>
+              </div>
+
+              <div class="detail-block">
+                <h4>Impact</h4>
+                <ul>
+                  <li>Significantly improved user experience for banking advisors — reduced task completion time</li>
+                  <li>Standardised UI components across the internal tooling ecosystem</li>
+                  <li>Established a repeatable design process for future internal tool projects</li>
+                </ul>
+              </div>
+
+              <div class="detail-block">
+                <h4>Tools</h4>
+                <div class="tools-row">
+                  <span class="tool-tag">Figma</span>
+                  <span class="tool-tag">FigJam</span>
+                  <span class="tool-tag">Zeplin</span>
+                  <span class="tool-tag">Atomic Design</span>
+                  <span class="tool-tag">Design System</span>
+                  <span class="tool-tag">Live Design</span>
+                </div>
+              </div>
+
+              <p class="project-note">Mockups and additional details available on request.</p>
+            </div>
+
+            <div class="project-image-large">
+              <img src="img/bread-slide.png" alt="BRED – Internal transfer management tool" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section APRIL -->
+    <div class="section section-4">
+      <div class="content">
+        <div class="project project-april">
+          <div class="project-header">
+            <h3>APRIL Assurance</h3>
+            <p class="project-subtitle">Subscription Journey Redesign — Research-Driven UX for Insurance Brokers</p>
+          </div>
+
+          <div class="project-details">
+            <div class="project-text">
+
+              <div class="detail-block">
+                <h4>Context</h4>
+                <p>APRIL Assurance, a leading insurance distribution group, needed to overhaul its broker subscription portal. The existing journeys were complex, error-prone, and slowing down brokers' ability to complete insurance subscriptions efficiently — directly impacting conversion and professional adoption.</p>
+              </div>
+
+              <div class="detail-block">
+                <h4>My Role</h4>
+                <p>Product Designer — collaborating with product, business, and development teams to redesign the end-to-end subscription experience, from initial research through validated production-ready prototypes.</p>
+              </div>
+
+              <div class="detail-block">
+                <h4>Approach & Methods</h4>
+                <ul>
+                  <li>Conducted user research — structured interviews with brokers and internal business stakeholders</li>
+                  <li>Synthesised insights to identify critical friction points and prioritise redesign scope</li>
+                  <li>Facilitated co-design workshops with product and business teams to align on solutions</li>
+                  <li>Designed end-to-end subscription flows — from product selection to contract confirmation</li>
+                  <li>Delivered iterative wireframes and interactive Figma prototypes, refined through multiple testing cycles</li>
+                  <li>Ran usability tests to validate assumptions and iterate before development handoff</li>
+                </ul>
+              </div>
+
+              <div class="detail-block">
+                <h4>Key Contributions</h4>
+                <ul>
+                  <li>Redesigned the full subscription journey for professional brokers — simplified multi-step flows</li>
+                  <li>Reduced cognitive load through clearer information architecture and progressive disclosure</li>
+                  <li>Created reusable form components and design guidelines for consistent subscription patterns</li>
+                  <li>Aligned product, business, and dev teams through shared design artefacts and documentation</li>
+                </ul>
+              </div>
+
+              <div class="detail-block">
+                <h4>Impact</h4>
+                <ul>
+                  <li>Improved broker satisfaction and experience quality — validated through user testing feedback</li>
+                  <li>Reduced subscription time and operational errors for professional users</li>
+                  <li>Increased portal adoption by broker professionals post-launch</li>
+                </ul>
+              </div>
+
+              <div class="detail-block">
+                <h4>Tools</h4>
+                <div class="tools-row">
+                  <span class="tool-tag">Figma</span>
+                  <span class="tool-tag">FigJam</span>
+                  <span class="tool-tag">User Interviews</span>
+                  <span class="tool-tag">Prototyping</span>
+                  <span class="tool-tag">Usability Testing</span>
+                  <span class="tool-tag">Live Design</span>
+                </div>
+              </div>
+
+              <p class="project-note">Mockups and additional details available on request.</p>
+            </div>
+
+            <div class="project-image-large">
+              <img src="img/april_slide.png" alt="APRIL – Subscription journey redesign" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Scroll hint (fixed, only visible on section-0) -->
+  <div class="scroll-indicator" id="scroll-hint">
+    <p class="scroll-text">Browse projects</p>
+    <div class="scroll-animation">
+      <i class="fas fa-chevron-right"></i>
+      <i class="fas fa-chevron-right"></i>
+      <i class="fas fa-chevron-right"></i>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+  <script src="portfolio-script.js"></script>
+  <script src="transition.js"></script>
+  <script>
+    function copyToClipboard(text, btn, e) {
+      navigator.clipboard.writeText(text).then(() => {
+        const icon = btn.querySelector('i');
+        icon.className = 'fas fa-check';
+        btn.classList.add('copy-btn--success');
+
+        const toast = document.createElement('div');
+        toast.className = 'copy-toast';
+        toast.textContent = btn.dataset.label || 'Copié !';
+        document.body.appendChild(toast);
+
+        const x = e.clientX + 14;
+        const y = e.clientY - 36;
+        toast.style.left = x + 'px';
+        toast.style.top  = y + 'px';
+
+        requestAnimationFrame(() => toast.classList.add('copy-toast--visible'));
+
+        setTimeout(() => {
+          toast.classList.remove('copy-toast--visible');
+          toast.addEventListener('transitionend', () => toast.remove(), { once: true });
+          icon.className = 'fas fa-copy';
+          btn.classList.remove('copy-btn--success');
+        }, 1600);
+      });
+    }
+  </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+.page-curtain {
+    position: fixed;
+    inset: 0;
+    background: #03045E;
+    z-index: 99999;
+    transform: translateX(-100%);
+    will-change: transform;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-curtain::after {
+    content: 'AZ';
+    color: rgba(255, 255, 255, 0.15);
+    font-family: "Urbanist", sans-serif;
+    font-size: clamp(4rem, 15vw, 10rem);
+    font-weight: 800;
+    letter-spacing: 0.05em;
+}
+
+@keyframes curtain-in {
+    from { transform: translateX(-100%); }
+    to   { transform: translateX(0); }
+}
+
+@keyframes curtain-out {
+    from { transform: translateX(0); }
+    to   { transform: translateX(100%); }
+}
+
+.page-curtain.in {
+    animation: curtain-in 0.55s cubic-bezier(0.76, 0, 0.24, 1) forwards;
+}
+
+.page-curtain.out {
+    animation: curtain-out 0.55s cubic-bezier(0.76, 0, 0.24, 1) forwards;
+}
