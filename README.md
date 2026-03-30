@@ -9,7 +9,7 @@ Senior Product Designer specializing in design systems and complex user journeys
 
 ## Key Projects
 
-### WOOP – Lead Design System (11/2024 – 12/2025)  
+### WOOP – Lead Design System 
 - Created a unified design system for all platforms and journeys  
 - Documented components in Zeroheight: anatomy, usage, accessibility, dev links  
 - Harmonized interfaces & improved UX consistency  
@@ -17,18 +17,18 @@ Senior Product Designer specializing in design systems and complex user journeys
 - **Stack:** Figma, Atomic Design, Design Tokens, Zeroheight  
 - **KPIs:** 80% of journeys conform → -40% duplicated UI components, -25% frontend dev time, -15% backend dev time, adoption by 80% of product teams  
 
-### Oney Bank – Senior Product Designer (09/2021 – 10/2024)  
+### Oney Bank – Senior Product Designer  
 - Designed & optimized a multi-level portal for loan management (clients, merchants, bank agents)  
 - Defined multi-actor transactional flows & dashboards  
 - Integrated journeys into Oney’s design system  
 - **Stack:** Figma, Prototyping, Design System, Accessibility  
 
-### Bred Bank – Product Designer UX/UI (10/2019 – 08/2021)  
+### Bred Bank – Product Designer UX/UI 
 - Full redesign of internal banking tool for transfer management  
 - Created user flows, dashboards & prototypes  
 - Mentored junior designers  
 
-### April Group – UX/UI Designer (09/2017 – 08/2019)  
+### April Group – UX/UI Designer 
 - Redesigned subscription journeys for professional insurance  
 - Wireframes, interactive prototypes, user testing  
 - Applied existing design system standards  
